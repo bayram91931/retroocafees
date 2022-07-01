@@ -80,7 +80,9 @@ header a:hover{
 
 header li{
     float: left;
-    display: inline;
+    height: 30px;
+    display: flex;
+    align-items: center;
     padding: 0 20px;
 }
 
@@ -100,22 +102,25 @@ header nav{
     margin-top: 10px;
     min-height: 500px;
     background: url('../images/showcase.png') no-repeat 0 5px;
-    text-align: center;
     color: rgb(243, 237, 225);
     position: relative;
+    text-align: center;
+    background-size: cover;
 }
 
 #showcase h1{
     position: absolute;
-    top: 35%;
-    left: 45%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font: 50px 'The Nautigal', cursive;
 }
 
 #showcase p{
     position: absolute;
-    top: 45%;
-    left: 40%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font: 70px 'The Nautigal', cursive;
 }
 
@@ -124,7 +129,7 @@ header nav{
 #find_nearest{
     margin: 0;
     min-height: 600px;
-    background: url('../images/nearest_cupofjoy.png') no-repeat center;
+    background: url('../images/nearest_cupofjoy.png') no-repeat center center;
     text-align: center;
     text-transform: uppercase;
     color: rgb(79, 61, 27);
@@ -132,9 +137,10 @@ header nav{
 }
 
 .hline{
-    margin-top: 70px;
     position: absolute;
-    left: 175px;
+    top: 11%;
+    left: 13%;
+    transform: translate(0, -11%);
     width: 50%;
     height: 32px;
     border-bottom: 1.5px solid rgb(79, 61, 27);
@@ -148,17 +154,19 @@ header nav{
 }
 
 #find_nearest p{
-    margin-top: 115px;
     position: absolute;
-    left: 325px;
+    top: 24%;
+    left: 22.5%;
+    transform: translate(0, -24%);
     font-size: 35px;
 }
 
 .cafe-finder{
     position: absolute;
     padding: 10px;
-    margin-top: 180px;
-    margin-left: 820px;
+    top: 40%;
+    right: 10%;
+    transform: translate(10%, -10%);
 }
 
 #find_nearest input[type="area"]{
@@ -191,6 +199,7 @@ header nav{
     margin-top: 4px;
     min-height: 493px;
     background: url('../images/tmp.png') no-repeat 0 -100px;
+    background-position: center center;
     text-align: center;
     color: rgb(249, 247, 245);
     position: relative;
@@ -198,15 +207,17 @@ header nav{
 
 #errorpg p{
     position: absolute;
-    bottom: 20%;
-    left: 34%;
+    bottom: 16%;
+    left: 50%;
+    transform: translate(-50%, -16%);
     font: 20px 'Poppins', sans-serif;
 }
 
 #errorpg a{
     position: absolute;
-    bottom: 10%;
-    left: 44%;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%, -6%);
     font: 20px  'Poppins', sans-serif;
 }
 
@@ -215,8 +226,9 @@ header nav{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    height: 38px;
-    background: #fff;
+    height: 42px;
+    width: 200px;
+    background: rgb(241, 226, 210);
     border: 0;
     border-radius: 15px;
     padding: 10px 10px;
@@ -234,7 +246,9 @@ header nav{
 /* About Us page */
 #about-img{
     min-height: 480px;
+    background-size: cover;
     background: url('../images/about.jpg') no-repeat 0 10px;
+    background-position: center center;
     color: rgb(217, 208, 190);
     position: relative;
     text-align: center;
@@ -242,8 +256,9 @@ header nav{
 
 #about-img h1{
     position: absolute;
-    top: 45%;
-    left: 43%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font: 65px 'The Nautigal', cursive;
 }
 
@@ -302,6 +317,12 @@ article#main-col{
 #menu h2{
     margin: 40px 0 20px 0;
     font: 50px 'The Nautigal', cursive;
+}
+
+#menu .menu-container{
+    max-width: 40em;
+    margin: auto;
+    padding: 0 15px;
 }
 
 #menu .menu-list{
@@ -374,7 +395,7 @@ footer img{
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 1023px){
     header #branding,
     header nav,
     header nav li,
@@ -386,5 +407,45 @@ footer img{
         float: none;
         text-align: center;
         width: 100%;
+    }
+
+    header li{
+        display: inline;
+    }
+
+    #showcase h1{
+        font-size: 40px;
+        top: 38%;
+    }
+
+    #showcase p{
+        font-size: 55px;
+        top: 55%;
+    }
+
+    #errorpg{
+        margin-bottom: 118px;
+    }
+
+    #find_nearest{
+        background: url('../images/nearest_cupofjoy1.png') no-repeat center center;
+    }
+
+    #find_nearest p{
+        top: 24%;
+        left: 50%;
+        transform: translate(-50%, -24%);
+        font-size: 29px;
+    }
+
+    .hline{
+        left: 5%;
+        width: 90%;
+    }
+    
+    .cafe-finder{
+        top: 75%;
+        left: 10%;
+        transform: translate(0, -50%);
     }
 }
