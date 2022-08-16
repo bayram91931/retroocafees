@@ -21,12 +21,12 @@ body{
 }
 
 .button1{
-    color: rgb(36, 35, 35);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
     height: 38px;
-    background: rgb(221, 189, 156);
+    background: rgb(255, 255, 255);
     border: 0;
     border-radius: 15px;
     padding: 10px 10px;
@@ -35,13 +35,13 @@ body{
 
 .button1:hover{
     font-weight: bold;
-    background-color: rgb(192, 148, 95);
+    background-color: rgb(255, 255, 255);
     font-size: 13.5px;
 }
 
 .darkbox{
     padding: 15px;
-    background-color: rgb(192, 148, 95);
+    background-color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -56,13 +56,13 @@ body{
 
 /* Header */
 header{
-    color: rgb(36, 35, 35);
+    color: rgb(255, 255, 255);
     padding-top: 30px;
     min-height: 80px;
 }
 
 header a{
-    color: rgb(36, 35, 35);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
